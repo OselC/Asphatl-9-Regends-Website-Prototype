@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'myFont', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(Fonts/Rajdhani-Regular.ttf);
+}
+
+/* Home section */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4, 9, 30, 0.7)), url(images/Asphatl_banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#navbar{
+    background-color:rgba(211, 211, 211, 0.573);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    height: 65PX;
+    top: 0;
+    position: sticky;
+    z-index: 2; /* Set the navigation bar to most front */
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 55px;
+    padding-left: 20px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right; 
+    text-decoration: none;
+    z-index: 2;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 15px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover{
+    color: #F90854;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #F90854;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.nav-links .close-btn{
+    display: none;
+}
+.menu-btn{
+    display: none;
+}
+
+/* -------------------- Content ---------------------------  */
+.text-box{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #F90854;
+    background: #F90854;
+    transition: 1s;
+}
+
+/* Overview section */
+.Overview{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4, 9, 30, 0.7)), url(images/Asphatl_banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-description{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.text-description h1{
+    font-size: 62px;
+    padding-top: 20px;
+}
+
+.text-description p{
+    margin: 40px 25px 20px;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    padding-top: 50px;
+    width: 47%;
+    float: left;
+}
+
+.text-description img{
+    margin: 40px 0px 20px;
+    right: 2%;
+    float: right;
+    width: 45%;
+    position: absolute;
+}
+
+/* Gameplay section */
+
+.Gameplay{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4, 9, 30, 0.7)), url(images/Asphatl_banner3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.gameplay-title{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.gameplay-title h1{
+    font-size: 62px;
+}
+
+.slider-wrapper .image-list{
+    display:grid;
+    gap: 20px;
+    font-size: 0;
+    margin-bottom: 40px;
+    overflow-x: auto;
+    scrollbar-width: 3px;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.slider-wrapper .image-list .image-item{
+    width: 550px;
+    height: 325px;
+    object-fit: cover;
+    padding-top: 140px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+
+.Slideshow{
+    max-width: 1200px;
+    width: 95%;
+    padding-left: 33px;
+}
+
+/* Footer section */
+
+.container{
+    min-height: 15vh;
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.573);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: rgba(211, 211, 211, 0.573);
+}
+
+.footer-col{
+    width: 100%;
+}
+
+.footer-col h1{
+    color: #F90854;
+    top: 70%;
+    left: 3%;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h2{
+    position: absolute;
+    top: 1px;
+    left: 0;
+    right: 60px;
+    padding: 5px;
+    text-align: right;  
+}
+
+.footer-col ul{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 48px;
+    text-align: right;
+}
+
+.social-links img{
+    width: 20px;
+    padding-top: 9px;
+}
+#twitter{
+    width: 18px;
+    padding-left: 1px;
+}
+#youtube{
+    padding-top: 7px;
+}
+
+.footer-col .social-links a{
+    float: right;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-color: #000000;
+    margin: 25px 5px 10px;
+    text-align: center;
+    line-height: 37px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+/* Media Screen Rule */
+@media(max-width: 768px){
+    .text-box{
+        z-index: 0;
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .text-description{
+        z-index: 0;
+    }
+    .text-description h1{
+        padding-top: 50px;
+    }
+    .text-description p{
+        float: none;
+        text-align: center;
+        width: 85%;
+        padding-top: 1px; 
+        margin-top: 1px;
+    }
+    .text-description img{
+        float: none;
+        width: 75%;
+        left: 12.5%;
+        padding-top: 1px;
+        margin-top: 1px;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(148, 148, 148);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links .close-btn{
+        display: block;
+        color: #000000;
+        margin: 10px;
+        padding-top: 15px;
+        padding-left: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .menu-btn{
+        display: block;
+        color: #000000;
+        margin: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .slider-wrapper .image-list{
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 0fr);
+        padding-top: 100px;
+    }
+    .slider-wrapper .image-list .image-item{
+        object-fit: cover;
+        padding-top: 140px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+    #footage{
+        width: 300px;
+        height: 200px;
+        margin-bottom: -100px;
+    }
+    .Gameplay{
+        min-height: 140vh;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+    .footer-col{
+        font-size: 10px;
+    }
+    .footer-col h2{
+        right: 37px;
+        font-size: 20px;
+    }
+    .footer-col ul{
+        top: 10px;
+        left: 0;
+        right: 15px;
+        text-align: right;
+    }
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}

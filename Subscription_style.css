@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'myFont', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(Fonts/Rajdhani-Regular.ttf);
+}
+
+/* -------------- Header ---------------*/
+.header{
+    min-height: 120vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4, 9, 30, 0.7)), url(images/Subscription_background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#navbar{
+    background-color:rgba(211, 211, 211, 0.573);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    height: 65PX;
+    top: 0;
+    position: sticky;
+    z-index: 2; /* Set the navigation bar to most front */
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 55px;
+    padding-left: 20px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right; 
+    text-decoration: none;
+    z-index: 2;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 15px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover{
+    color: #F90854;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #F90854;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.nav-links .close-btn{
+    display: none;
+}
+.menu-btn{
+    display: none;
+}
+
+/* --------------- Content -------------------*/
+
+.title-screen{
+    width: 100%;
+    color: #fff;
+    font-size: 35px;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    padding-top: 5px;
+}
+
+.subscription{
+    left: 34%;
+    top: 12%;
+    position: relative;
+}
+
+.subscription h2{
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: -10px;
+}
+
+#category{
+    padding-right: 25px;
+    padding-left: 10px;
+}
+
+#male-title{
+    padding-right: 30px;
+}
+
+.subscription form{
+    width: 350px;
+    height: 400px;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.subscription .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.input-box input{
+    width: 94%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #F90854;
+    border-radius: 40px;
+    padding-left: 15px;
+
+    font-size: 18px;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.subscription .agreement{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 15px 0 15px;
+}
+
+.agreement{
+    padding-left: 10px;
+}
+
+.agreement label input{
+    margin-right: 3px;
+}
+
+.subscription .btn{
+    width: 100%;
+    height: 45px;
+    background-color: #F90854;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Footer section */
+
+.container{
+    min-height: 15vh;
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.573);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: rgba(211, 211, 211, 0.573);
+    width: 100%;
+}
+
+.footer-col{
+    width: 100%;
+}
+
+.footer-col h1{
+    color: #F90854;
+    top: 80%;
+    left: 3%;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h2{
+    position: absolute;
+    top: 1px;
+    left: 0;
+    right: 60px;
+    padding: 5px;
+    text-align: right;
+    
+}
+
+.footer-col ul{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 48px;
+    text-align: right;
+}
+
+.social-links img{
+    width: 20px;
+    padding-top: 9px;
+}
+#twitter{
+    width: 18px;
+    padding-left: 1px;
+}
+#youtube{
+    padding-top: 7px;
+}
+
+.footer-col .social-links a{
+    float: right;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-color: #000000;
+    margin: 25px 5px 10px;
+    text-align: center;
+    line-height: 37px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+/* Media Screen Rule */
+@media(max-width: 768px){
+    .text-box{
+        z-index: 0;
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .text-description{
+        z-index: 0;
+    }
+    .text-description h1{
+        padding-top: 50px;
+    }
+    .text-description p{
+        float: none;
+        text-align: center;
+        width: 85%;
+        padding-top: 1px; 
+        margin-top: 1px;
+    }
+    .text-description img{
+        float: none;
+        width: 75%;
+        left: 12.5%;
+        padding-top: 1px;
+        margin-top: 1px;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: rgb(148, 148, 148);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links .close-btn{
+        display: block;
+        color: #000000;
+        margin: 10px;
+        padding-top: 15px;
+        padding-left: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .menu-btn{
+        display: block;
+        color: #000000;
+        margin: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+
+    .title-screen{
+        padding-top: 5px;
+        font-size: 23px;
+    }
+
+    .subscription form{
+        width: 250px;
+        height: 400px;
+    }
+
+    .input-box input{
+        font-size: 17px;
+    }
+
+    .input-box i{
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+    }
+
+    .subscription{
+        padding-top: 25px;
+        left: 8.5%;
+    }
+
+    .footer-col{
+        font-size: 10px;
+    }
+    .footer-col h1{
+        font-size: 18px;
+    }
+    .footer-col h2{
+        right: 37px;
+        font-size: 20px;
+    }
+    .footer-col ul{
+        top: 10px;
+        left: 0;
+        right: 15px;
+        text-align: right;
+    }
+}
+
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
