@@ -9,6 +9,10 @@ The website consists of 5 main pages:
 - **Esports** — Shows the game's trailer video and details about its tournaments, such as the number of events held, number of players, prize amount, number of races, and their sponsors.  
 - **Subscription** — Contains a login form. It also includes five validation rules: the username must be 4 to 10 characters long, the email must end with “@gmail.com”, the date of birth must be filled in, the gender must be selected, and the terms and conditions checkbox must be checked.
 
+To see my Figma and references, click here:
+[Figma Link and Reference.docx](https://github.com/user-attachments/files/21333622/Figma.Link.and.Reference.docx)
+
+
 > Note: This project is for educational purposes only and is not affiliated with the official “Asphalt 9 Legends.”
 
 ## How to run the prototype in Visual Studio Code:
