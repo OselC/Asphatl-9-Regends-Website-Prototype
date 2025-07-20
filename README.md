@@ -11,3 +11,19 @@ which is a parody of the popular mobile racing game "Asphalt 9 Legends". This pr
 5. Right click on "Home_Page.html" file
 6. Click on "Open with Live Server"
 7. The website should be opened on your default browser
+
+
+## Shortcut to open project folder in Visual Studio Code:
+1. Click on folder path and type this code:
+```bash
+cmd
+```
+2. Press ENTER
+> This will open a command prompt
+
+3. Type in this code on the command prompt:
+```bash
+code .
+```
+4. Press ENTER
+> This will open Visual Studio Code
