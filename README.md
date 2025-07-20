@@ -26,7 +26,7 @@ To see my Figma and references, click here:
 
 
 ## Shortcut to open project folder in Visual Studio Code:
-1. Click on folder path and type this code:
+1. Click on the project folder path and type this code:
 ```bash
 cmd
 ```
