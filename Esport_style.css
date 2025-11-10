@@ -95,9 +95,9 @@ nav img{
 .title{
     width: 100%;
     color: #fff;
-    font-size: 35px;
+    font-size: 25px;
     position: absolute;
-    top: 18%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
