@@ -251,11 +251,12 @@ nav img{
 
 .footer-col{
     width: 100%;
+    min-height: 8vh;
 }
 
 .footer-col h1{
     color: #F90854;
-    top: 70%;
+    top: 60%;
     left: 3%;
     text-transform: capitalize;
     font-weight: 500;
