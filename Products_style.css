@@ -115,6 +115,10 @@ nav img{
     width: 100%;
 }
 
+.nav-links ul li a.active{
+    color: #F90854;
+}
+
 .nav-links .close-btn{
     display: none;
 }
